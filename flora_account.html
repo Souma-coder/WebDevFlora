@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>login page</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="log_body">
+           <div class="header">
+            <div class="container">
+            <div class="navbar">
+            <div class="logo">
+                <img src="flora/Flora.png" alt="logo" width="125px">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="home_page.html">Home</a></li>
+                    <li><a href="catagories.html">Our products</a></li>
+                    <li><a href="About_us.html">About us</a></li>
+                    <li><a href="flora_account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html">
+            <img src="flora/cart.png" width="30px">
+                </a>
+            </div>
+            </div>
+            <div class="form">
+                <div class="buttons">
+                   <div id="btn"></div>
+                    <button class="button_select" onclick="login()">Login</button>
+                    <button class="button_select" onclick="register()">Register</button>
+                </div>
+                <form id="login" class="user_input">
+                    <input type="text" class="input_field" placeholder="User Id" required>
+                    <input type="password" class="input_field" placeholder="Password" required>
+                    <input type="checkbox" class="check_box"><span>Remember Password</span>
+                    <button type="submit" class="sub_btn">Login</button>
+                </form>
+                 <form id="register" class="user_input">
+                    <input type="text" class="input_field" placeholder="User Id" required>
+                    <input type="email" class="input_field" placeholder="Email Id" required>
+                    <input type="password" class="input_field" placeholder="Password" required>
+                    <input type="checkbox" class="check_box"><span>I agree to the terms & conditions</span>
+                    <button type="submit" class="sub_btn">Register</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer">
+           <div class="new">
+               <div class="row">
+                   <div class="col3">
+                       <h3>Download Our App</h3>
+                       <p>Download the app for anroid and ios devices</p>
+                       <div class="app-logo">
+                           <img src="flora/gplay2.png" width="125px">
+                       <img src="flora/app-store.png" width="125px" height="55px">
+                       </div>                    
+                   </div>
+                   <div class="col4">
+                       <img src="flora/Flora.png" alt="logo" width="125px" >
+                       <p>Our purpose is to sustainably make the valuable flowers to the many</p>
+                   </div>
+                   <div class="col5">
+                       <h3>Useful links</h3>
+                       <ul>
+                           <li>Coupons</li>
+                           <li>Blog Post</li>
+                           <li>Return Policy</li>
+                           <li>Join Affiliate</li>
+                       </ul>
+                   </div>
+                   <div class="col6">
+                       <h3>Follow us</h3>
+                       <ul>
+                           <li>Fackbook</li>
+                           <li>Instagram</li>
+                           <li>Twitter</li>
+                           <li>Youtube</li>
+                       </ul>
+                   </div>
+               </div>
+               <hr>
+               <p class="cp">Copyright 2021 - Flora by Soumajit</p>
+           </div>
+        </div>
+        </div>
+        <script>
+            var x = document.getElementById("login");
+            var y = document.getElementById("register");
+            var z = document.getElementById("btn");
+            
+            function login(){
+                x.style.left = "50px";
+                y.style.left = "450px";
+                z.style.left = "0";
+            }
+            
+            function register(){
+                x.style.left = "-400px";
+                y.style.left = "50px";
+                z.style.left = "110px";
+            }
+        </script>
+    </body>    
+</html>
